@@ -41,7 +41,7 @@ Inicialmente criado para telas de desktop e depois adaptado para telas menores.
 ---
 
 ## Como Acessar a Interface
-Link do site: 
+Link do site: https://estevao-rodrigues-de-freitas.github.io/um-site-para-venda-de-um-fone-de-ouvido/ 
 
 ---
 
