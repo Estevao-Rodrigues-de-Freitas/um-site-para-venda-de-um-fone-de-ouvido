@@ -19,6 +19,11 @@ Inicialmente criado para telas de desktop e depois adaptado para telas menores.
 
 ---
 
+## Como Acessar a Interface
+Link do site: https://estevao-rodrigues-de-freitas.github.io/um-site-para-venda-de-um-fone-de-ouvido/ 
+
+---
+
 ## Explicação das Seções
 ### 1. Hero
 - Entrega uma descriação básica do site
@@ -37,11 +42,6 @@ Inicialmente criado para telas de desktop e depois adaptado para telas menores.
 
 ### 6. Benefícios
 - Um campo dedicado a comentar sobre a quantidade em estoque do produto e possíveis promoções.
-
----
-
-## Como Acessar a Interface
-Link do site: https://estevao-rodrigues-de-freitas.github.io/um-site-para-venda-de-um-fone-de-ouvido/ 
 
 ---
 
