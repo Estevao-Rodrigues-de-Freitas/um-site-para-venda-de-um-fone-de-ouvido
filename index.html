@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" defer></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <title>Fones de Ouvido de Alta Tecnologia</title>
+</head>
+<body>
+    <main>
+        <div class="filter-layer-two"></div>
+        <div class="filter-layer-one"></div>
+        <section class="hero-box box-format">
+            <div class="first-text text-content-format slide-box-animation-format">
+                <img src="assets/images/company-logo-placeholder-eighth.png" alt="" class="company-logo">
+                <h1 class="hero-title">FONES TECNOLOGICOS</h1>
+                <p class="explanation-box-format">
+                    Este template emula um site criado para a venda de um único produto,
+                    nessa caso um fone de ouvido que tem um custo estimado de R$300.
+                    Este site foi criado utilizando de HTML, JavaScript e CSS sem a utilização
+                    de nenhuma biblioteca. Todas as imagens e vídeos foram criados por mim
+                    Estevão Rodrigues de Freitas utilizando photoshop e blender.
+                </p>
+            </div>
+
+            <video
+                autoplay
+                muted
+                loop
+                preload="auto"
+                class="spin-product-box slide-box-animation-format"
+            >
+                <!-- Main format -->
+                <source src="assets/videos/phones-box.webm" type="video/webm">
+
+                <!-- Fallback universal -->
+                <source src="assets/videos/phones-box-fallback.mp4" type="video/mp4">
+
+                <!-- Fallback extreme -->
+                <img src="assets/images/lines-robot.png" alt="robot in the city illustration">
+
+            </video>
+        </section>
+
+        <section class="items-box box-format">
+            <div class="second-text text-content-format slide-box-animation-format">
+                <h1 class="items-title">ITENS</h1>
+                <ul class="items-list">
+                    <li>Fones de Ouvido
+                        <p>
+                           Este campo é dedicado a destrinchar informações sobre o fone de ouvido,
+                           indentificado o modelo do fone de ouvido, qualidade sonora, qualidade de
+                           uso do aparelho, tempo de carga e até mesmo do que o dispositivo é efeito,
+                           assim respondendo possíveis dúvidas que os clientes deteriam sobre o produto.
+                        </p>
+                    </li>
+                    <li>Cabo USB
+                        <p>
+                            Assim como o campo acima este também serve para entregar informações sobre
+                            o produto, só que neste caso um cabo USB, indicando o tamanho do cabo e o 
+                            tempo até a carga completa, com um alerta de não ultrapassar este limite de
+                            tempo, pois isto pode danificar a capacidade de carga máxima do dispositivo.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <img src="assets/images/items.png" alt="" class="items slide-box-animation-format">
+        </section>
+
+        <section class="volume-box box-format">
+            <div class="third-text text-content-format">
+                <h1 class="volume-title">CONTROLE SONORO</h1>
+                <p class="explanation-box-format">
+                    Neste campo temos informações sobre o controle de som do aparelho,
+                    explicando onde estão localizados os botões que controlam o volume,
+                    a pontência minima e máxima do aparelho, demonstrada visualmente pela
+                    imagem a direita, e por meio de interatividade no site pelos botões abaixo. 
+                </p>
+                <h2>TENTE</h2>
+                <div class="canvas-container">
+                    <button class="prev" onclick="player1.prevFrame()">+</button>
+                    <button class="next" onclick="player1.nextFrame()">-</button>
+                </div>
+            </div>
+            <canvas id="canvas1" class="volume-frames"></canvas>
+        </section>
+        
+        <section class="usb-box box-format">
+            <div class="fourth-text text-content-format">
+                <h1 class="usb-title">CONECTOR USB</h1>
+                <p class="explanation-box-format">
+                    Com este campo obtemos informações sobre onde o conector do USB
+                    se encontra no dispositivo, explicando a forma correta de encaixar
+                    o cabo no aparelho, e alertando o cliente para não tentar força
+                    a entrada do cabo pois esta ação pode danificar o fone de ouvido.
+                </p>
+            </div>
+            <img src="assets/images/cableUSB.png" alt="cable usb" class="usb-cable">
+        </section>
+
+        <section class="on-off-box box-format">
+            <div class="fifth-text text-content-format">
+                <h1 class="on-off-title">LIGAR / DESLIGAR</h1>
+                <p class="explanation-box-format">
+                    Este campo entrega informações sobre onde se encontra o botão de ligar e desligar
+                    do dispositivo, comentando sobre indicativos sonoros e visuais para se notar se o
+                    aparelho está ligado ou não, em conjunto a um teste visual com a imagem a direita, e um botão de
+                    interatividade logo abaixo.
+                </p>
+                <h2>TENTE</h2>
+                    <div class="canvas-container">
+                      <button class="prev" onclick="player2.prevFrame()"></button>
+                    </div>
+            </div>
+            <canvas id="canvas2" class="on-off-frames"></canvas>
+        </section>
+
+        <section class="buy-box">
+            <div class="text-content-format">
+                <h1>BENEFÍCIOS</h1>
+                <p class="explanation-box-format">
+                    Este último campo é dedicado a comentar sobre o produto de forma mais
+                    abrangente, comentando sobre possíveis promoções, quantos produtos se tem
+                    em estoque e por quanto tempo este aparelho estará a venda, ou seja, uma última via
+                    de comunicação com cliente antes de uma possível compra.
+                </p>
+                <a href="" class="buy-now">COMPRE AGORA</a>
+            </div>
+            <img src="assets/images/phone.png" alt="headphones" class="phones">
+            <img src="assets/images/crowd-of-robots.png" alt="" class="crowd">
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,576 @@
+/*For all Site--------------------------------------------------------*/
+* {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   font-family: 'Orbitron', sans-serif;
+   background: #002158;
+}
+
+h1, h2, h3 {
+   font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, a, p, ul, li, button{
+    position: relative;
+    z-index: 2;
+}
+
+p, ul, li{
+  font-size: 20px;
+}
+
+video, img, canvas{
+    position: relative;
+    z-index: 0;
+}
+
+a{
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.box-format{
+    display: grid;
+    position: relative;
+    min-height: auto;
+    overflow: hidden;
+}
+
+.box-format > *{
+    grid-area: 1 / 1;
+}
+
+.text-content-format{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 57%;
+    z-index: 2;
+}
+
+.explanation-box-format{
+    max-height: 500px;
+    width: 70%;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    padding: 10px;
+    background-color: black;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.filter-layer-one, .filter-layer-two{
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    pointer-events: none;
+}
+
+.filter-layer-one{
+    background: linear-gradient(to right, #000000 30%, #00205800 50%);
+    z-index: 1;
+}
+
+.filter-layer-two{
+    background: linear-gradient(to left, #6bbcffb6 3%, #005eff00 30%);
+    z-index: 1;
+}
+
+.slide-up-animation-format{
+    animation: slide-up 10s linear;
+    animation-timeline: scroll(root);
+}
+
+.slide-down-animation-format{
+    animation: slide-down 10s linear;
+    animation-timeline: scroll(root);
+}
+
+.slide-box-animation-format{
+    animation: slide-box 10s linear;
+    animation-timeline: scroll(root);
+}
+
+/*For all Site--------------------------------------------------------*/
+
+
+/*Hero----------------------------------------------------------------*/
+.hero-title{
+    margin: 5PX;
+    color: transparent;
+    font-size: 70px;
+    text-align: center;
+    width: fit-content;
+    max-width: 50vw;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    -webkit-text-stroke: 2px #46acffd5;
+}
+
+.company-logo{
+    width: 20%;
+    object-fit: cover;
+    border-bottom: 1px solid #46acffd5;
+}
+
+.first-text{
+    animation-range: 5% 30%;
+}
+
+.spin-product-box{
+    width: 90%;
+    margin-left: auto;
+    object-fit: cover;
+
+    animation-range: 5% 30%;
+}
+/*Hero----------------------------------------------------------------*/
+
+
+/*Items---------------------------------------------------------------*/
+.items-title{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    width: fit-content;
+    padding: 3px;
+    max-width: 50vw;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.items-list{
+   border: 2px solid white;
+   background-color: black;
+   width: 70%;
+}
+
+.second-text{
+    animation-range: 25% 40%;
+}
+
+.items{
+    width: 50%;
+    object-fit: cover;
+    margin: auto;
+    margin-left: 50%;
+
+    animation-range: 25% 40%;
+}
+/*Items---------------------------------------------------------------*/
+
+
+/*Volume--------------------------------------------------------------*/
+.volume-box{
+    border-bottom: 2px solid #46acffd5;
+}
+
+.prev, .next{
+    margin: 10px;
+    width: 70px;
+    color: white;
+    font-size: 50px;
+    background-color: black;
+    border: 2px solid #46acffd5;
+    padding: 10px;
+}
+
+.prev:hover, .next:hover{
+    cursor: pointer;
+    color: rgb(92, 154, 247);
+    background-color: rgb(4, 31, 53);
+}
+
+canvas {
+    width: 85%;
+    margin-left: auto;
+    object-fit: cover;
+}
+
+.third-text{
+    animation: slide-up 10s linear;
+    animation-timeline: scroll(root);
+    animation-range: 15% 30%;
+}
+
+.volume-frames{
+    position: relative;
+    align-self: end;
+    width: 40%;
+    object-fit: cover;
+        
+    animation: slide-down 10s linear;
+    animation-timeline: scroll(root);
+    animation-range: 15% 30%;
+}
+/*Volume--------------------------------------------------------------*/
+
+
+/*USB-----------------------------------------------------------------*/
+.fourth-text{
+    animation: slide-up 10s linear;
+    animation-timeline: scroll(root);
+    animation-range: 30% 50%;
+}
+
+.usb-cable{
+    position: relative;
+    align-self: end;
+    width: 50%;
+    margin-left: 50%;
+    object-fit: cover;
+    border: 2px solid #46acffd5;
+
+    animation: slide-down 10s linear;
+    animation-timeline: scroll(root);
+    animation-range: 30% 50%;
+}
+/*USB-----------------------------------------------------------------*/
+
+
+/*ON-OFF--------------------------------------------------------------*/
+.on-off-box > *{
+    grid-area: 1 / 1;
+}
+
+.fifth-text{
+    animation: slide-up 10s linear;
+    animation-timeline: scroll(root);
+    animation-range: 40% 80%;
+}
+
+.on-off-frames{
+    position: relative;
+    align-self: end;
+    width: 50%;
+    margin-left: 50%;
+    object-fit: cover;
+    border: 2px solid #46acffd5;
+
+    animation: slide-down 10s linear;
+    animation-timeline: scroll(root);
+    animation-range: 50% 70%;
+}
+/*ON-OFF--------------------------------------------------------------*/
+
+
+/*Buy-----------------------------------------------------------------*/
+.buy-box{
+    display: grid;
+    position: relative;
+    min-height: auto;
+    overflow: hidden;
+}
+
+.buy-box > *{
+    grid-area: 1 / 1;
+}
+
+.buy-now{
+    position: relative;
+    border: 2px solid #6bbcffe1;
+    background-color: black;
+    padding: 10px;
+}
+
+.buy-box .text-content-format{
+    z-index: 3;
+    margin-top: 150px;
+    margin-bottom: 150px; 
+    text-align: center;
+}
+
+.buy-box .explanation-box-format{
+    text-align: left;
+}
+
+.buy-now:hover{
+    cursor: pointer;
+    color: rgb(92, 154, 247);
+    border-radius: 10px;
+    background-color: rgb(4, 31, 53);
+}
+
+.phones{
+    width: 30%;
+    object-fit: cover;
+    margin: auto;
+    margin-left: 50%;
+    z-index: 2;
+    animation: slide-down 10s linear;
+    animation-timeline: scroll(root);
+    animation-range: 70% 90%;
+}
+
+.crowd{
+    position: relative;
+    align-self: end;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+    
+    animation: slide-up 10s linear;
+    animation-timeline: scroll(root);
+    animation-range: 70% 100%;
+}
+/*Buy-----------------------------------------------------------------*/
+
+
+/* -Portable Adaptation -----------------------------------------------------------------*/
+@media (max-width: 768px) and (orientation: portrait){
+/*For all Site--------------------------*/
+body{
+    background: linear-gradient(to right, #000000 50%, #002158 70%, #6bbcffe1 100%);
+}
+
+.box-format{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-content-format{
+    width: 100%;
+}
+
+.explanation-box-format{
+    width: 90%;
+    max-height: 700px;
+}
+
+.items-list{
+    width: 90%;
+}
+
+.filter-layer-one{
+    background: linear-gradient(to right, #00000000 30%, #00205800 50%);
+}
+
+.filter-layer-two{
+    background: linear-gradient(to left, #6bbcff00 3%, #005eff00 30%);
+}
+/*For all Site--------------------------*/
+
+
+/*Hero----------------------------------*/
+.hero-title{
+    font-size: 30px;
+    max-width: 90vw;
+}
+
+.company-logo{
+    margin: auto;
+    width: 30%;
+    margin-left: 35%;
+}
+
+
+.first-text{
+    animation-range: 0% 25%;
+}
+
+.spin-product-box{
+    right: 170px;
+    width: 150%;
+    border: 1px solid #46acffd5;
+    
+    animation-range: 0% 25%;
+}
+
+/*Hero----------------------------------*/
+
+
+/*Items---------------------------------*/
+.second-text{
+    animation-range: 25% 55%;
+}
+
+.items{
+    margin: auto;
+    width: 100%;
+
+    animation-range: 25% 55%;
+}
+/*Items---------------------------------*/
+
+
+/*Volume--------------------------------*/
+.third-text{
+    animation-range: 20% 40%;
+}
+
+.volume-frames{
+    margin: auto;
+    width: 100%;
+
+    animation-range: 20% 40%;
+}
+/*Volume--------------------------------*/
+
+
+/*USB-----------------------------------*/
+.fourth-text{
+    animation-range: 40% 60%;
+}
+
+.usb-cable{
+    margin: auto;
+    width: 100%;
+
+    animation-range: 40% 60%;
+}
+/*USB-----------------------------------*/
+
+
+/*ON-OFF--------------------------------*/
+.fifth-text{
+    animation-range: 60% 80%;
+}
+
+.on-off-frames{
+    margin: auto;
+    width: 100%;
+
+    animation-range: 60% 80%;
+}
+
+/*ON-OFF--------------------------------*/
+
+
+/*Buy-----------------------------------*/
+.phones{
+    width: 30%;
+    margin: auto;
+    margin-bottom: 10%;
+}
+/*Buy-----------------------------------*/
+}
+
+
+@media (max-width: 1000px) and (orientation: landscape){
+/*For all Site--------------------------*/
+body{
+    background: linear-gradient(to right, #000000 50%, #002158 70%, #6bbcffe1 100%);
+}
+
+.explanation-box-format{
+    max-height: 700px;
+}
+
+.filter-layer-one{
+    background: linear-gradient(to right, #00000000 30%, #00205800 50%);
+}
+
+.filter-layer-two{
+    background: linear-gradient(to left, #6bbcff00 3%, #005eff00 30%);
+}
+/*For all Site--------------------------*/
+
+
+/*Hero----------------------------------*/
+.hero-title{
+    font-size: 45px;
+}
+
+.company-logo{
+    width: 30%;
+}
+
+.first-text{
+    animation-range: 10% 35%;
+}
+
+.spin-product-box{
+    border: 1px solid #46acffd5;
+    animation-range: 10% 35%; 
+}
+/*Hero----------------------------------*/
+
+
+/*Items---------------------------------*/
+.second-text{
+    animation-range: 35% 55%;
+}
+
+.items{
+    animation-range: 35% 55%;
+}
+/*Items---------------------------------*/
+
+
+/*Volume--------------------------------*/
+.volume-frames{
+    animation-range: 35% 45%;
+}
+/*Volume--------------------------------*/
+
+
+/*USB-----------------------------------*/
+.fourth-text{
+    animation-range: 50% 60%;
+}
+
+.usb-cable{
+    animation-range: 50% 60%;
+}
+
+/*USB-----------------------------------*/
+
+
+/*ON-OFF--------------------------------*/
+.fifth-text{
+    animation-range: 60% 70%;
+}
+
+.on-off-frames{
+    animation-range: 60% 70%;
+}
+/*ON-OFF--------------------------------*/
+
+}
+
+/* -Portable Adaptation -----------------------------------------------------------------*/
+
+
+/*Animations Here-----------------------------------------------------*/
+@keyframes slide-up {
+   from {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-down {
+   from {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-box {
+   from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+}
+/*Animations Here-----------------------------------------------------*/
+
